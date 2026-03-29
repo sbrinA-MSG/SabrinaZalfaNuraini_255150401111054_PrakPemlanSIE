@@ -12,6 +12,11 @@ public class AgenApp {
         t3.pesan("Cici", "Surabaya", 200, 100000);
         t3.tampil();
 
+        /*
+        no 5b
+        membuat instansi t4
+        memanggil overload pesan (String, int)
+        */
         Tiket t4 = new Tiket();
         t4.pesan("Dono", 60);
         t4.tampil();
