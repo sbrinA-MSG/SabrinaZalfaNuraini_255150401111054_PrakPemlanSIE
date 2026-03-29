@@ -1,8 +1,8 @@
 public class Tiket {
-    private String namaPenumpang = "Anonim";
-    private String tujuan = "Jakarta";
-    private int jarakTempuh = 750;
-    private double hargaTiket = 250000;
+    protected String namaPenumpang = "Anonim";
+    protected String tujuan = "Jakarta";
+    protected int jarakTempuh = 750;
+    protected double hargaTiket = 250000;
 
     public void pesan() {}
 
@@ -15,7 +15,8 @@ public class Tiket {
     public void pesan(String n, String t, int j, double h) {
         this.namaPenumpang = n;
         this.tujuan = t;
-        this.jarakTempuh = j; this.hargaTiket = h;
+        this.jarakTempuh = j; 
+        this.hargaTiket = h;
     }
 
     /*
@@ -30,12 +31,13 @@ public class Tiket {
 
     /*
     no.6A
-    method overload pesan(String tujuan, String nama)
-    */
+    percobaan method overload pesan(String tujuan, String nama)
+    
     public void pesan (String t, String n){
         this.tujuan = t;
         this.namaPenumpang = n;
     }
+    */
     public void tampil() {
         System.out.println("Nama Penumpang: " + this.namaPenumpang);
         System.out.println("Tujuan: " + this.tujuan);
