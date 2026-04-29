@@ -42,7 +42,7 @@ public class BinaryTree {
     //no6
     public int countLeaves(Node node) {
         if (node == null) 
-            return 0;                                        // Base case 1: tidak ada node
+            return 0; //tidak ada node
         if (node.left == null && node.right == null) 
             return 1;            
         return countLeaves(node.left) + countLeaves(node.right);
@@ -50,9 +50,9 @@ public class BinaryTree {
     //no7
     public int treeHeight(Node node) {
         if (node == null) 
-            return 0;                                            // Base case
-        int leftHeight  = treeHeight(node.left);                              // Tinggi subtree kiri
-        int rightHeight = treeHeight(node.right);                             // Tinggi subtree kanan
+            return 0;                                           
+        int leftHeight  = treeHeight(node.left); // Tinggi subtree kiri
+        int rightHeight = treeHeight(node.right); // Tinggi subtree kanan
         return 1 + Math.max(leftHeight, rightHeight);    
     }
     
